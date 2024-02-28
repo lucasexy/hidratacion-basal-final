@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de hidratación</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index-calculadoralucas.js"></script>
+</head>
+<body>
+    <h1>Calculadora de Hidratacion Basal</h1>
+    <div>
+        <div id="calculadora">
+            <h2>Hidratacion Basal</h2>
+            <input type="number" id="peso" placeholder="Indicar peso en kilogramos" />
+            <button onclick="calcular()">Calcular</button>
+        </div>
+        <div>
+            <p1><output id="Resultado"></output></p1>
+        </div>
+        <div id="descripcion">
+            <h3>¿Como se calcula?</h3>
+            <ul>
+                <li>De 0kg a 10kg, se calcula 100cc por cada kilo</li>
+                <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
+                <li>De 20kg y hasta 30kg, se suman 20cc por cada kilo adicional</li>
+                <li>De 30kg para arriba, se determina mediante la superficie corporal del paciente</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
